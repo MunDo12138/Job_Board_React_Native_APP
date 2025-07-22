@@ -13,4 +13,7 @@ config.resolver.alias = {
 
 config.resolver.platforms = ['ios', 'android', 'native', 'web'];
 
+// Ensure proper asset resolution for web
+config.resolver.assetExts.push('ttf');
+
 module.exports = config;

@@ -26,9 +26,19 @@
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "build": {
+        "babel": {
+          "include": [
+            "node_modules/expo-router"
+          ]
+        }
+      }
     },
     "scheme": "jobsift",
-    "platforms": ["ios", "android", "web"]
+    "platforms": ["ios", "android", "web"],
+    "experiments": {
+      "typedRoutes": true
+    }
   }
 }

@@ -9,12 +9,14 @@ npm-debug.*
 *.mobileprovision
 *.orig.*
 web-build/
+.env
 
 # macOS
 .DS_Store
 
-# vscode
-.vscode
+# Next.js
+.next/
+out/
 
-# env
-.env
+# Vercel
+.vercel
